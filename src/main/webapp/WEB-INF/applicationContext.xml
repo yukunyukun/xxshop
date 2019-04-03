@@ -20,10 +20,10 @@
 		value="${password}"></property> <property name="url" value="${jdbcUrl}"></property> 
 		<property name="driverClassName" value="${driverClass}"></property> </bean> -->
 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
-		<property name="user" value="${user}"></property>
-		<property name="password" value="${password}"></property>
-		<property name="jdbcUrl" value="${jdbcUrl}"></property>
-		<property name="driverClass" value="${driverClass}"></property>
+		<property name="user" value="${jdbc.username}"></property>
+		<property name="password" value="${jdbc.password}"></property>
+		<property name="jdbcUrl" value="${jdbc.Url}"></property>
+		<property name="driverClass" value="${jdbc.driverClass}"></property>
 		<property name="initialPoolSize" value="${initialPoolSize}"></property>
 		<property name="maxPoolSize" value="${maxPoolSize}"></property>
 	</bean>
